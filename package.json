@@ -1,0 +1,30 @@
+{
+  "name": "job_portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anudeep-code/job_portal.git"
+  },
+  "keywords": [],
+  "author": "Anudeep Pyla",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Anudeep-code/job_portal/issues"
+  },
+  "homepage": "https://github.com/Anudeep-code/job_portal#readme",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
